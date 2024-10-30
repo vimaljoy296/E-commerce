@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VJ Bazaar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    This is my e-commerce Web page
+    <!-- Navbar -->
+    <nav>
+        <h1>VJ Bazaar</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Indoor</a></li>
+            <li><a href="#">Outdoor</a></li>
+            <li><a href="#">View Cart</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="intro">
+            <p>Welcome to <strong>VJ Bazaar</strong>, a B2C e-commerce platform offering sports equipment for indoor and outdoor games. Discover a range of products for athletes, fitness enthusiasts, and sports lovers.</p>
+        </div>
+
+        <div class="products">
+            <div class="product-category">
+                <h3>Indoor Sport Items</h3>
+                <img src="Indoor image.avif" alt="Indoor Sports Items">
+            </div>
+            <div class="product-category">
+                <h3>Outdoor Sport Items</h3>
+                <img src="Outdoor image.jpg" alt="Outdoor Sports Items">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>Products Info</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Blog</a>
+            <a href="#">Terms Of Services</a>
+        </div>
+        <div class="footer-section">
+            <h3>Feedback</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">X</a>
+            <a href="#">Threads</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Vimal Joy<br>Hebbal, Bangalore, Karnataka 560032<br>vimaljoy296@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for toggling the hamburger menu -->
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
